@@ -56,6 +56,12 @@ export default defineType({
       title: "Body",
       type: "blockContent",
     }),
+    defineField({
+      name: "videoUrl",
+      title: "Video",
+      type: "string",
+      placeholder: "Video URL",
+    }),
   ],
 
   preview: {

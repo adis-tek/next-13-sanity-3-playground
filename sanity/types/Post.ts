@@ -22,4 +22,5 @@ export interface Post {
   imageUrl: string;
   alt: string;
   body: PortableTextBlock[];
+  videoUrl: string;
 }

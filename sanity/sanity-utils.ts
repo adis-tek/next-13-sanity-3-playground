@@ -13,6 +13,7 @@ export async function getPosts(): Promise<Post[]> {
       "imageUrl": mainImage.asset->url,
         body,
         alt,
+        videoUrl,
     }
 `
   );
