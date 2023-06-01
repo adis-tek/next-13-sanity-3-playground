@@ -64,6 +64,9 @@ export default async function Home() {
                       "settings",
                     ],
                     settings: ["quality"],
+                    muted: true,
+                    volume: 0,
+                    autoplay: false,
                   }}
                 />
               ) : null}
