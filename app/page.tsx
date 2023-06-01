@@ -54,6 +54,17 @@ export default async function Home() {
                       },
                     ],
                   }}
+                  options={{
+                    controls: [
+                      "play",
+                      "progress",
+                      "current-time",
+                      "mute",
+                      "volume",
+                      "settings",
+                    ],
+                    settings: ["quality"],
+                  }}
                 />
               ) : null}
             </div>
