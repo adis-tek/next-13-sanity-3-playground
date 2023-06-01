@@ -18,17 +18,18 @@ export default async function Home() {
   };
 
   const provider = (videoUrl: string | Plyr.Provider) => {
-    const url = videoUrl.match("youtube")
-      ? "youtube"
-      : videoUrl.match("vimeo")
-      ? "vimeo"
-      : "html5";
+    const url =
+      videoUrl.match("youtube") || videoUrl.match("youtu.be")
+        ? "youtube"
+        : videoUrl.match("vimeo")
+        ? "vimeo"
+        : "html5";
     return url;
   };
 
   return (
     <div>
-      <h1 className="title">Title</h1>
+      <h1 className="title">Posts From Sanity CMS</h1>
       <div>
         {posts.map((post) => {
           return (
@@ -63,6 +64,11 @@ export default async function Home() {
   );
 }
 
-// //player.vimeo.com/video/583292576
 // https://www.youtube.com/embed/ERwHvwsGFoE
-//https://www.sdrive.app/embed/1ptBQD
+// //player.vimeo.com/video/583292576
+
+//https://youtube/fMFVZPpavO4
+
+// <iframe src="https://player.vimeo.com/video/832371072?h=d7ab7349ef" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+// https://vimeo.com/832371072?share=copy
